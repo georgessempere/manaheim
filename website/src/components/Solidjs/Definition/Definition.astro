@@ -1,0 +1,7 @@
+---
+import { DefinitionSolid } from "./DefinitionSolid.tsx";
+
+const { title, description } = Astro.props;
+---
+
+<DefinitionSolid client:idle title={title} description={description} />

@@ -1,0 +1,85 @@
+:root {
+  /* Colors */
+  --darkBlue-base: hsla(213, 49%, 10%, 1);
+  --darkBlue-surface: hsla(213, 49%, 14%, 1);
+  --darkBlue-elevated: hsla(213, 49%, 18%, 1);
+  --darkBlue-border: hsla(213, 49%, 24%, 1);
+  
+  --text-light: hsla(209, 29%, 95%, 1);
+  --text-primary: hsla(210, 19%, 82%, 1);
+  --text-dim: hsla(210, 19%, 72%, 1);
+  --text-faint: hsla(210, 19%, 62%, 1);
+  
+  --gold-primary: hsla(39, 25%, 59%, 1);
+  --gold-light: hsla(39, 31%, 65%, 1);
+  --gold-dark: hsla(39, 21%, 55%, 1);
+  
+  --svalkari-primary: hsla(197, 68%, 60%, 1);
+  --svalkari-light: hsla(197, 100%, 74%, 1);
+  --svalkari-dark: hsla(197, 59%, 44%, 1);
+  
+  --haimono-primary: hsla(151, 68%, 62%, 1);
+  --haimono-light: hsla(151, 100%, 77%, 1);
+  --haimono-dark: hsla(151, 52%, 46%, 1);
+  
+  --maravela-primary: hsla(7, 68%, 72%, 1);
+  --maravela-light: hsla(7, 100%, 81%, 1);
+  --maravela-dark: hsla(7, 52%, 66%, 1);
+  
+  --qadirathi-primary: hsla(285, 68%, 71%, 1);
+  --qadirathi-light: hsla(285, 100%, 81%, 1);
+  --qadirathi-dark: hsla(285, 52%, 60%, 1);
+  
+  --action-primary: hsla(176, 68%, 52%, 1);
+  --action-light: hsla(176, 76%, 67%, 1);
+  --action-dark: hsla(176, 74%, 43%, 1);
+
+  --gold-blue-hazel:  hsla(39, 36%, 54%, 1);
+  --gold-blue-limed: hsla(110, 12%, 70%, 1);
+  --gold-blue-bayoux: hsla(213, 28%, 60%, 1);
+
+  /* Fonts */
+  --title: "Berkshire Swash", cursive;
+  --heading: "Cormorant Garamond", serif;
+  --small-caps: "Cormorant SC", serif;
+  --body: "Source Sans 3", sans-serif;
+  --interface: "Source Sans 3", sans-serif;
+
+
+  /* Sizes */
+  --size-1: 4px;
+  --size-2: calc(var(--size-1) * 2);
+  --size-3: calc(var(--size-1) * 3);
+  --size-4: calc(var(--size-1) * 4);
+  --size-5: calc(var(--size-1) * 5);
+  --size-6: calc(var(--size-1) * 6);
+  --size-7: calc(var(--size-1) * 7);
+  --size-8: calc(var(--size-1) * 8);
+  --size-9: calc(var(--size-1) * 9);
+  --size-10: calc(var(--size-1) * 10);
+  --size-11: calc(var(--size-1) * 11);
+  --size-12: calc(var(--size-1) * 12);
+  --size-13: calc(var(--size-1) * 13);
+  --size-14: calc(var(--size-1) * 14);
+  --size-15: calc(var(--size-1) * 15);
+  --size-16: calc(var(--size-1) * 16);
+
+  /* Borders */
+  --border-radius-base: 8px;
+
+  /* Shadows */
+  --shadow-base: 0 2px 4px rgba(0, 0, 0, 0.3);
+
+  /* Transitions */
+  --transition-base: all 0.3s ease;
+
+  /* Z-index */
+  --z-index-base: 1;
+  --z-index-overlay: 10;
+  --z-index-modal: 20;
+  --z-index-popover: 30;
+  --z-index-dropdown: 40;
+  --z-index-sticky: 50;
+  --z-index-fixed: 100;
+  --z-index-fullscreen: 1000;
+}

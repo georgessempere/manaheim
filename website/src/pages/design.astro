@@ -1,0 +1,341 @@
+---
+import Definition from "../components/Solidjs/Definition/Definition.astro";
+import Layout from "../layouts/Layout.astro";
+
+const description =
+  "Les Svalkari, un peuple maritime fier et résilient, ont forgé leur destin dans les eaux glacées du Nord. Originaires des fjords profonds et des archipels brumeux, ils ont développé une culture unique centrée sur leur relation symbiotique avec l'océan. Leurs ancêtres, d'habiles navigateurs et constructeurs navals, ont exploré les mers, établissant des routes commerciales et découvrant de nouvelles terres. Au fil des siècles, les Svalkari ont perfectionné leur art de la navigation, bâtissant des navires rapides et robustes capables de braver les tempêtes les plus violentes. Leur maîtrise des technologies marines leur a permis de prospérer, établissant des cités portuaires animées et des comptoirs commerciaux dans tout le royaume.";
+---
+
+<Layout title="Deisgn System">
+  <main>
+    <header class="header">
+      <h1>Les Civilisations</h1>
+      <p class="subtitle">Découvrez les peuples qui façonnent notre monde</p>
+    </header>
+    <div class="civilizations">
+      <div class="card svalkari">
+        <div class="civ-header">
+          <h2 style="color: var(--svalkari-primary)">Les Svalkari</h2>
+          <div><i>"Les Gardiens des Mers du Nord"</i></div>
+        </div>
+        <div class="civ-content">
+          <p style="margin-bottom: 2rem;">
+            Maîtres incontestés des océans glacés, les <Definition
+              title="Svalkari"
+              description={description}
+            />
+            ont forgé leur civilisation dans les fjords profonds et les archipels
+            brumeux. Leur connexion avec la mer guide chaque aspect de leur société.
+          </p>
+          <ul style="color: var(--svalkari-light)">
+            <li>Navigation et construction navale exceptionnelles</li>
+            <li>Culture basée sur l'harmonie avec l'océan</li>
+            <li>Maîtrise des technologies marines avancées</li>
+            <li>Traditions ancestrales préservées</li>
+          </ul>
+          <a href="#" class="button-link svalkari"><span>Explorer</span></a>
+        </div>
+      </div>
+      <div class="card maravela">
+        <div class="civ-header">
+          <h2 style="color: var(--maravela-primary)">Les Maravela</h2>
+          <div><i>"Les Enfants du Désert Ardent"</i></div>
+        </div>
+        <div class="civ-content">
+          <p style="margin-bottom: 2rem;">
+            Forgeant leur destin dans les vastes déserts, les Maravela ont bâti
+            une civilisation résiliente et passionnée. Leur maîtrise du feu et
+            des métaux précieux a façonné leur culture unique.
+          </p>
+          <ul style="color: var(--maravela-light)">
+            <li>Expertise en métallurgie et joaillerie</li>
+            <li>Adaptabilité aux climats extrêmes</li>
+            <li>Traditions martiales distinctives</li>
+            <li>Art et artisanat raffinés</li>
+          </ul>
+          <a href="#" class="button-link maravela"><span>Explorer</span></a>
+        </div>
+      </div>
+      <div class="card haimono">
+        <div class="civ-header">
+          <h2 style="color: var(--haimono-primary)">Les Haïmono</h2>
+          <div><i>"En Harmonie avec la Nature"</i></div>
+        </div>
+        <div class="civ-content">
+          <p style="margin-bottom: 2rem;">
+            Peuple des forêts profondes, les Haïmono ont développé une
+            civilisation en parfaite symbiose avec leur environnement. Leur
+            sagesse millénaire guide leur progression technologique
+            respectueuse.
+          </p>
+          <ul style="color: var(--haimono-light)">
+            <li>Architecture organique sophistiquée</li>
+            <li>Système social équilibré</li>
+            <li>Technologies vertes avancées</li>
+            <li>Médecine naturelle évoluée</li>
+          </ul>
+          <a href="#" class="button-link haimono"><span>Explorer</span></a>
+        </div>
+      </div>
+      <div class="card qadirathi">
+        <div class="civ-header">
+          <h2 style="color: var(--qadirathi-primary)">Les Qadirathi</h2>
+          <div><i>"Les Gardiens des Mers du Nord"</i></div>
+        </div>
+        <div class="civ-content">
+          <p style="margin-bottom: 2rem;">
+            Maîtres incontestés des océans glacés, les Svalkari ont forgé leur
+            civilisation dans les fjords profonds et les archipels brumeux. Leur
+            connexion avec la mer guide chaque aspect de leur société.
+          </p>
+          <ul style="color: var(--qadirathi-light)">
+            <li>Navigation et construction navale exceptionnelles</li>
+            <li>Culture basée sur l'harmonie avec l'océan</li>
+            <li>Maîtrise des technologies marines avancées</li>
+            <li>Traditions ancestrales préservées</li>
+          </ul>
+          <a href="#" class="button-link qadirathi"><span>Explorer</span></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="civ-header">
+          <h2 style="color: var(--gold-primary)">Les Nomades</h2>
+          <div><i>"Les Gardiens des Mers du Nord"</i></div>
+        </div>
+        <div class="civ-content">
+          <p style="margin-bottom: 2rem;">
+            Maîtres incontestés des océans glacés, les Svalkari ont forgé leur
+            civilisation dans les fjords profonds et les archipels brumeux. Leur
+            connexion avec la mer guide chaque aspect de leur société.
+          </p>
+          <ul style="color: var(--gold-light)">
+            <li>Navigation et construction navale exceptionnelles</li>
+            <li>Culture basée sur l'harmonie avec l'océan</li>
+            <li>Maîtrise des technologies marines avancées</li>
+            <li>Traditions ancestrales préservées</li>
+          </ul>
+          <a href="#" class="button-link"><span>Explorer</span></a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <blockquote style="max-width: 800px; margin: 4rem auto;">
+      <p>
+        La diversité des civilisations est la plus grande richesse de notre
+        monde. Chaque culture est un joyau unique dans la couronne de
+        l'humanité.
+      </p>
+      <cite>Eldara Nyx, Grande Archiviste des Royaumes Unis</cite>
+    </blockquote>
+
+    <div class="multi-columns">
+      <p>
+        <h5>Histoire des Svalkari</h5> Les Svalkari, un peuple maritime fier et résilient,
+        ont forgé leur destin dans les eaux glacées du Nord. Originaires des fjords
+        profonds et des archipels brumeux, ils ont développé une culture unique centrée
+        sur leur relation symbiotique avec l'océan. Leurs ancêtres, d'habiles navigateurs
+        et constructeurs navals, ont exploré les mers, établissant des routes commerciales
+        et découvrant de nouvelles terres. Au fil des siècles, les Svalkari ont perfectionné
+        leur art de la navigation, bâtissant <a href="#"
+          >des navires rapides et robustes</a
+        >
+        capables de braver les tempêtes les plus violentes. Leur maîtrise des technologies
+        marines leur a permis de prospérer, établissant des <b
+          >cités portuaires animées</b
+        > et des comptoirs commerciaux dans tout le royaume.
+      </p>
+      <blockquote>
+        La mer est notre mère, notre foyer et notre destin. Nous sommes nés de
+        l'écume et nous retournerons à l'océan.
+        <cite>Eldara Nyx, Grande Archiviste des Royaumes Unis</cite>
+      </blockquote>
+      <p>
+        La société Svalkari est profondément ancrée dans les traditions
+        ancestrales, transmises de génération en génération. Ils honorent les
+        esprits de la mer, cherchant leur protection et leur guidance dans tous
+        les aspects de la vie. Les Svalkari sont connus pour <i
+          >leur sens aigu de l'honneur</i
+        >, leur loyauté inébranlable et leur courage face à l'adversité.
+        Aujourd'hui, les Svalkari restent les maîtres incontestés des océans,
+        leurs navires sillonnant les mers du monde connu. Leur réputation de
+        marins exceptionnels, de commerçants astucieux et de guerriers
+        redoutables n'est plus à faire. Fiers de leur héritage et confiants en
+        leur destin, les Svalkari continuent de façonner leur avenir, guidés par
+        les vents et les courants de l'océan qui est leur foyer.
+      </p>
+      <p>
+        La société Svalkari est profondément ancrée dans les traditions
+        ancestrales, transmises de génération en génération. Ils honorent les
+        esprits de la mer, cherchant leur protection et leur guidance dans tous
+        les aspects de la vie. Les Svalkari sont connus pour <i
+          >leur sens aigu de l'honneur</i
+        >, leur loyauté inébranlable et leur courage face à l'adversité.
+        Aujourd'hui, les Svalkari restent les maîtres incontestés des océans,
+        leurs navires sillonnant les mers du monde connu. Leur réputation de
+        marins exceptionnels, de commerçants astucieux et de guerriers
+        redoutables n'est plus à faire. Fiers de leur héritage et confiants en
+        leur destin, les Svalkari continuent de façonner leur avenir, guidés par
+        les vents et les courants de l'océan qui est leur foyer.
+      </p>
+      <p>
+        La société Svalkari est profondément ancrée dans les traditions
+        ancestrales, transmises de génération en génération. Ils honorent les
+        esprits de la mer, cherchant leur protection et leur guidance dans tous
+        les aspects de la vie. Les Svalkari sont connus pour <i
+          >leur sens aigu de l'honneur</i
+        >, leur loyauté inébranlable et leur courage face à l'adversité.
+        Aujourd'hui, les Svalkari restent les maîtres incontestés des océans,
+        leurs navires sillonnant les mers du monde connu. Leur réputation de
+        marins exceptionnels, de commerçants astucieux et de guerriers
+        redoutables n'est plus à faire. Fiers de leur héritage et confiants en
+        leur destin, les Svalkari continuent de façonner leur avenir, guidés par
+        les vents et les courants de l'océan qui est leur foyer.
+      </p>
+      <p>
+        La société Svalkari est profondément ancrée dans les traditions
+        ancestrales, transmises de génération en génération. Ils honorent les
+        esprits de la mer, cherchant leur protection et leur guidance dans tous
+        les aspects de la vie. Les Svalkari sont connus pour <i
+          >leur sens aigu de l'honneur</i
+        >, leur loyauté inébranlable et leur courage face à l'adversité.
+        Aujourd'hui, les Svalkari restent les maîtres incontestés des océans,
+        leurs navires sillonnant les mers du monde connu. Leur réputation de
+        marins exceptionnels, de commerçants astucieux et de guerriers
+        redoutables n'est plus à faire. Fiers de leur héritage et confiants en
+        leur destin, les Svalkari continuent de façonner leur avenir, guidés par
+        les vents et les courants de l'océan qui est leur foyer.
+      </p>
+      <p>
+        La société Svalkari est profondément ancrée dans les traditions
+        ancestrales, transmises de génération en génération. Ils honorent les
+        esprits de la mer, cherchant leur protection et leur guidance dans tous
+        les aspects de la vie. Les Svalkari sont connus pour <i
+          >leur sens aigu de l'honneur</i
+        >, leur loyauté inébranlable et leur courage face à l'adversité.
+        Aujourd'hui, les Svalkari restent les maîtres incontestés des océans,
+        leurs navires sillonnant les mers du monde connu. Leur réputation de
+        marins exceptionnels, de commerçants astucieux et de guerriers
+        redoutables n'est plus à faire. Fiers de leur héritage et confiants en
+        leur destin, les Svalkari continuent de façonner leur avenir, guidés par
+        les vents et les courants de l'océan qui est leur foyer.
+      </p>
+      <p>
+        La société Svalkari est profondément ancrée dans les traditions
+        ancestrales, transmises de génération en génération. Ils honorent les
+        esprits de la mer, cherchant leur protection et leur guidance dans tous
+        les aspects de la vie. Les Svalkari sont connus pour <i
+          >leur sens aigu de l'honneur</i
+        >, leur loyauté inébranlable et leur courage face à l'adversité.
+        Aujourd'hui, les Svalkari restent les maîtres incontestés des océans,
+        leurs navires sillonnant les mers du monde connu. Leur réputation de
+        marins exceptionnels, de commerçants astucieux et de guerriers
+        redoutables n'est plus à faire. Fiers de leur héritage et confiants en
+        leur destin, les Svalkari continuent de façonner leur avenir, guidés par
+        les vents et les courants de l'océan qui est leur foyer.
+      </p>
+      <p>
+        La société Svalkari est profondément ancrée dans les traditions
+        ancestrales, transmises de génération en génération. Ils honorent les
+        esprits de la mer, cherchant leur protection et leur guidance dans tous
+        les aspects de la vie. Les Svalkari sont connus pour <i
+          >leur sens aigu de l'honneur</i
+        >, leur loyauté inébranlable et leur courage face à l'adversité.
+        Aujourd'hui, les Svalkari restent les maîtres incontestés des océans,
+        leurs navires sillonnant les mers du monde connu. Leur réputation de
+        marins exceptionnels, de commerçants astucieux et de guerriers
+        redoutables n'est plus à faire. Fiers de leur héritage et confiants en
+        leur destin, les Svalkari continuent de façonner leur avenir, guidés par
+        les vents et les courants de l'océan qui est leur foyer.
+      </p>
+    </div>
+
+    <div class="card" style="width: 600px; margin: 4rem auto;">
+      <h5>Les cités</h5>
+      <p>
+        Ici, nous allons explorer les cités de l'archipel de Manaheim.
+        <ol>
+          <li>La grande cité de Redmane</li>
+          <li>La ville de Caramon</li>
+          <li>La cité-marchande de Polom</li>
+          <li>La lumineuse ville de Daepora</li>
+        </ol>
+      </p>
+    </div>
+
+    <form class="card" style="max-width: 600px; margin: 4rem auto;">
+      <div class="form-group">
+        <label for="name">Votre nom</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Entrez votre nom"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="civilization">Civilisation préférée</label>
+        <select id="civilization" name="civilization">
+          <option value="">Choisissez une civilisation</option>
+          <option value="svalkari">Les Svalkari</option>
+          <option value="haimono">Les Haïmono</option>
+          <option value="maravela">Les Maravela</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label>Centres d'intérêt</label>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="interests" value="culture"/>
+            Culture et traditions
+          </label>
+        </div>
+        <div class="checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" name="interests" value="technology" />
+            Technologies <Definition
+              title="anciennes"
+              description="Technologies anciennes"
+            />
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Type de voyage préféré</label>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="travel" value="cultural" />
+            Voyage culturel
+          </label>
+        </div>
+        <div class="radio-group">
+          <label class="radio-label">
+            <input type="radio" name="travel" value="adventure" />
+            Aventure
+          </label>
+        </div>
+      </div>
+
+      <button type="submit"><span>Envoyer</span></button>
+    </form>
+  </main>
+</Layout>
+
+<style>
+  .civilizations {
+    width: 80%;
+    margin: calc(var(--size-8) * 3) auto;
+    padding: 0 var(--size-8);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(calc(var(--size-10) * 10) , 1fr));
+    gap: var(--size-10);
+  }
+
+  .civ-header {
+    padding: var(--size-12) var(--size-8);
+    text-align: center;
+    position: relative;
+  }
+</style>

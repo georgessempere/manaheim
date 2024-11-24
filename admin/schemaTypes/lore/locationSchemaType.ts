@@ -7,13 +7,19 @@ export const locationSchemaType = defineType({
   fields: [
     {
       name: "name",
-      title: "Name",
+      title: "Nom",
+      type: "string",
+    },
+    {
+      name: "type",
+      title: "Type",
       type: "string",
     },
     {
       name: "description",
       title: "Description",
-      type: "text",
+      type: "array",
+      of: [{ type: "block" }],
     },
     {
       name: "image",
@@ -24,10 +30,10 @@ export const locationSchemaType = defineType({
       },
     },
     {
-        name: "peoples",    
-        type: "array",
-        title: "Personnages",
-        of: [{ type: "reference", to: { type: "character" } }],
-        },
+      name: "peoples",
+      type: "array",
+      title: "Personnages",
+      of: [{ type: "reference", to: { type: "character" } }],
+    },
   ],
 });

@@ -5,21 +5,28 @@ export const characterSchemaType = {
   fields: [
     {
       name: "name",
-      title: "Name",
+      title: "Nom",
       type: "string",
     },
     {
       name: "description",
       title: "Description",
-      type: "text",
+      type: "array",
+      of: [{ type: "block" }],
     },
     {
       name: "image",
-      title: "Image",
+      title: "Portrait",
       type: "image",
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: "location",
+      type: "reference",
+      title: "Résidence",
+      to: [{ type: "location" }],
     },
   ],
 };

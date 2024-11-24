@@ -1,0 +1,269 @@
+/* Cards */
+
+div.card, form.card {
+  min-width: 300px;
+  border-radius: var(--size-6) var(--size-4) var(--size-1) var(--size-4);
+  overflow: hidden;
+  transition: box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--darkBlue-surface);
+  border: 1px solid var(--darkBlue-border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  padding: var(--size-12);
+  border-top: 1px solid var(--gold-primary);
+  border-left: 2px solid var(--gold-primary);
+}
+
+div.card:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+div.card.maravela {
+  border-top: 1px solid var(--maravela-primary);
+  border-left: 2px solid var(--maravela-primary);
+}
+
+div.card.svalkari {
+  border-top: 1px solid var(--svalkari-primary);
+  border-left: 2px solid var(--svalkari-primary);
+}
+
+div.card.haimono {
+  border-top: 1px solid var(--haimono-primary);
+  border-left: 2px solid var(--haimono-primary);
+}
+
+div.card.qadirathi {
+  border-top: 1px solid var(--qadirathi-primary);
+  border-left: 2px solid var(--qadirathi-primary);
+}
+
+/* Link-Buttons */
+
+a.button-link {
+  display: inline-block;
+  font-family: var(--interface);
+  overflow: hidden;
+  padding: var(--size-3) var(--size-5);
+  border-radius: calc(var(--border-radius-base) * 3);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--size-3);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  border: 1px solid var(--gold-primary);
+  position: relative;
+  background-color: var(--darkBlue-surface);
+}
+
+a.button-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--gold-primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+a.button-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+a.button-link > span {
+  position: relative;
+  z-index: 1;
+  color: var(--gold-primary);
+}
+
+a.button-link:hover > span,
+a.button-link.svalkari:hover > span,
+a.button-link.haimono:hover > span,
+a.button-link.maravela:hover > span,
+a.button-link.qadirathi:hover > span {
+  color: var(--darkBlue-base);
+}
+
+a.button-link.svalkari {
+  border-color: var(--svalkari-primary);
+}
+a.button-link.svalkari::before {
+  background-color: var(--svalkari-primary);
+}
+a.button-link.svalkari > span {
+  color: var(--svalkari-primary);
+}
+
+a.button-link.haimono {
+  border-color: var(--haimono-primary);
+}
+a.button-link.haimono::before {
+  background-color: var(--haimono-primary);
+}
+a.button-link.haimono > span {
+  color: var(--haimono-primary);
+}
+
+a.button-link.maravela {
+  border-color: var(--maravela-primary);
+}
+a.button-link.maravela::before {
+  background-color: var(--maravela-primary);
+}
+a.button-link.maravela > span {
+  color: var(--maravela-primary);
+}
+
+a.button-link.qadirathi {
+  border-color: var(--qadirathi-primary);
+}
+a.button-link.qadirathi::before {
+  background-color: var(--qadirathi-primary);
+}
+a.button-link.qadirathi > span {
+  color: var(--qadirathi-primary);
+}
+
+/* Form styles */
+.form-group {
+  margin-bottom: var(--size-6);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--size-4);
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: var(--size-3);
+  border-radius: var(--border-radius-base);
+  border: 1px solid var(--darkBlue-border);
+  background: var(--darkBlue-elevated);
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--gold-dark);
+  box-shadow: 0 0 0 2px rgba(121, 99, 57, 0.2);
+}
+
+select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23B8C7D9' viewBox='0 0 16 16'%3E%3Cpath d='M8 12L2 6h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right var(--size-4)center;
+  padding-right: var(--size-8);
+}
+
+.checkbox-label,
+.radio-label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-2);
+  cursor: pointer;
+  color: var(--text-light);
+  transition: color 0.5s ease;
+}
+
+.checkbox-label:hover,
+.radio-label:hover {
+  color: var(--text-primary);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  width: var(--size-5);
+  height: var(--size-5);
+  accent-color: var(--gold-dark);
+  cursor: pointer;
+}
+
+
+
+button[type="submit"] {
+  background-color: var(--darkBlue-surface);
+  font-family: var(--interface);
+  color: var(--gold-primary);
+  padding: var(--size-3) var(--size-5);
+  border: 1px solid var(--gold-primary);
+  border-radius: calc(var(--border-radius-base) * 3);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-base);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: var(--size-3);
+  transition: all 0.5s ease;
+}
+
+button[type="submit"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gold-primary);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s ease;
+  z-index: 0;
+}
+
+button[type="submit"]:hover {
+  color: var(--darkBlue-surface);
+}
+
+button[type="submit"]:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+button[type="submit"] span {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* Header */
+
+.header {
+    background: linear-gradient(to bottom, var(--darkBlue-surface), var(--darkBlue-base));
+    padding: var(--size-8) 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--gold-dark);
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-primary), transparent);
+}
+
+.header>.subtitle {
+    font-family: var(--interface);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+    font-size: var(--size-5);
+    margin-top: var(--size-3);
+    font-weight: 300;
+}
